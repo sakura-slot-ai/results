@@ -4,6 +4,12 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>さくら🌸のAI予測 的中実績アーカイブ</title>
+<meta property="og:title" content="さくら🌸のAI予測 的中実績アーカイブ">
+<meta property="og:description" content="静岡スロットの前日予測を毎晩公開し、翌日に答え合わせ。当たりも外れも全部、自動集計で公開しています。">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://sakura-slot-ai.github.io/results/">
+<meta name="twitter:card" content="summary">
+<meta name="description" content="さくら🌸のAI予測（@sakura_slo_ai）の的中実績アーカイブ。予測した全日を集計し、答え合わせできなかった日も外れとして分母に含める保守的な集計です。">
 <style>
   :root { color-scheme: light dark; }
   body {
@@ -20,6 +26,14 @@
   }
   h1 { font-size: 1.4rem; }
   .updated { color: #888; font-size: 0.8rem; margin-bottom: 24px; }
+  .policy {
+    background: #fff8fa; border-left: 4px solid #e85d8a; border-radius: 0 10px 10px 0;
+    padding: 14px 16px; margin-bottom: 28px; font-size: 0.9rem; line-height: 1.7;
+  }
+  @media (prefers-color-scheme: dark) {
+    .policy { background: #2a2226; }
+  }
+  .policy b { color: #e85d8a; }
   .stats-grid {
     display: grid; grid-template-columns: repeat(2, 1fr); gap: 12px; margin-bottom: 32px;
   }
@@ -47,7 +61,13 @@
 </head>
 <body>
   <h1>さくら🌸のAI予測 的中実績アーカイブ</h1>
-  <p class="updated">最終更新: 2026-07-30 12:04</p>
+  <p class="updated">最終更新: 2026-07-30 20:43</p>
+
+  <div class="policy">
+    <b>集計の方針</b>：前日の夜に予測を公開 → 翌日にみんなの実戦データで答え合わせ、を毎日繰り返しています。
+    数字は予測を出した<b>全日・全店舗</b>の集計です。翌日のデータが取れず答え合わせできなかった店も、
+    「外れ」として分母に含めています。<b>数字は盛りません。</b>
+  </div>
 
   <div class="stats-grid">
     <div class="card"><div class="num">81.0%</div><div class="label">総合勝率</div></div>
