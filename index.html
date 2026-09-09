@@ -33,7 +33,13 @@
   /* Xのプロフィールと同じ見せ方（バナー＋左下に重なる丸アイコン）。
      アイコン・バナーはXで使っているものと同一（assets/）。2026-09-09 追加 */
   .hero { margin: -24px -16px 0; }
-  .hero img.banner { display: block; width: 100%; aspect-ratio: 3 / 1; object-fit: cover; }
+  /* height:auto を必ず入れる。**入れないと height="500" 属性が使われて縦500pxの箱になり、
+     object-fit:cover が左右を切り落とす**（2026-09-09 スマホで発生）。
+     max-height は横長画面でバナーが主張しすぎないための上限 */
+  .hero img.banner {
+    display: block; width: 100%; height: auto;
+    aspect-ratio: 3 / 1; max-height: 200px; object-fit: cover;
+  }
   .hero .avatar-row {
     display: flex; align-items: flex-end; gap: 12px;
     padding: 0 16px; margin-top: -38px; margin-bottom: 10px;
@@ -95,7 +101,7 @@
     </div>
   </div>
   <h1>さくら🌸のAI予測 的中実績アーカイブ</h1>
-  <p class="updated">最終更新: 2026-09-09 17:45</p>
+  <p class="updated">最終更新: 2026-09-09 17:48</p>
 
   <div class="policy">
     <b>集計の方針</b>：前日の夜に予測を公開 → 翌日にみんなの実戦データで答え合わせ、を毎日繰り返しています。
